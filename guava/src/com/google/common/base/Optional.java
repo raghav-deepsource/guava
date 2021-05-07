@@ -15,10 +15,10 @@
 package com.google.common.base;
 
 import static com.google.common.base.Preconditions.checkNotNull;
-import com.google.errorprone.annotations.DoNotMock;
 
 import com.google.common.annotations.Beta;
 import com.google.common.annotations.GwtCompatible;
+import com.google.errorprone.annotations.DoNotMock;
 import java.io.Serializable;
 import java.util.Iterator;
 import java.util.Set;
