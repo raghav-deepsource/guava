@@ -16,7 +16,6 @@
 
 package com.google.common.hash;
 
-
 /**
  * An enum that contains all of the known hash functions.
  *
@@ -39,9 +38,9 @@ enum HashFunctionEnum {
   SIP_HASH24(Hashing.sipHash24()),
   FARMHASH_FINGERPRINT_64(Hashing.farmHashFingerprint64()),
 
-  // Hash functions found in //javatests for comparing against current implementation of CityHash.
-  // These can probably be removed sooner or later.
-  ;
+// Hash functions found in //javatests for comparing against current implementation of CityHash.
+// These can probably be removed sooner or later.
+;
 
   private final HashFunction hashFunction;
 
