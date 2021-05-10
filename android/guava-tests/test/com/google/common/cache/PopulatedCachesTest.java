@@ -43,7 +43,6 @@ import junit.framework.TestCase;
  *
  * @author mike nonemacher
  */
-
 public class PopulatedCachesTest extends TestCase {
   // we use integers as keys; make sure the range covers some values that ARE cached by
   // Integer.valueOf(int), and some that are not cached. (127 is the highest cached value.)
@@ -187,7 +186,6 @@ public class PopulatedCachesTest extends TestCase {
     }
   }
 
-
   public void testKeySet_populated() {
     for (LoadingCache<Object, Object> cache : caches()) {
       Set<Object> keys = cache.asMap().keySet();
@@ -237,7 +235,6 @@ public class PopulatedCachesTest extends TestCase {
       checkEmpty(cache);
     }
   }
-
 
   public void testEntrySet_populated() {
     for (LoadingCache<Object, Object> cache : caches()) {
