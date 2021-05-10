@@ -15,8 +15,8 @@
 package com.google.common.collect;
 
 import com.google.common.annotations.Beta;
-import com.google.errorprone.annotations.DoNotMock;
 import com.google.common.annotations.GwtIncompatible;
+import com.google.errorprone.annotations.DoNotMock;
 import java.util.NoSuchElementException;
 import java.util.Set;
 import org.checkerframework.checker.nullness.qual.Nullable;
