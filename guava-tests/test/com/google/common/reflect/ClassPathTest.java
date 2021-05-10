@@ -175,7 +175,6 @@ public class ClassPathTest extends TestCase {
         .isEqualTo(new File("/C:\\\u20320 \u22909"));
   }
 
-
   @AndroidIncompatible // Android forbids null parent ClassLoader
   // https://github.com/google/guava/issues/2152
   public void testJarFileWithSpaces() throws Exception {
@@ -183,7 +182,6 @@ public class ClassPathTest extends TestCase {
     URLClassLoader classloader = new URLClassLoader(new URL[] {url}, null);
     assertThat(ClassPath.from(classloader).getTopLevelClasses()).isNotEmpty();
   }
-
 
   public void testScan_classPathCycle() throws IOException {
     File jarFile = File.createTempFile("with_circular_class_path", ".jar");
@@ -199,7 +197,6 @@ public class ClassPathTest extends TestCase {
   }
 
   @AndroidIncompatible // Path (for symlink creation)
-
   public void testScanDirectory_symlinkCycle() throws IOException {
     ClassLoader loader = ClassPathTest.class.getClassLoader();
     // directory with a cycle,
@@ -231,7 +228,6 @@ public class ClassPathTest extends TestCase {
   }
 
   @AndroidIncompatible // Path (for symlink creation)
-
   public void testScanDirectory_symlinkToRootCycle() throws IOException {
     ClassLoader loader = ClassPathTest.class.getClassLoader();
     // directory with a cycle,
@@ -251,7 +247,6 @@ public class ClassPathTest extends TestCase {
     }
   }
 
-
   public void testScanFromFile_fileNotExists() throws IOException {
     ClassLoader classLoader = ClassPathTest.class.getClassLoader();
     assertThat(
@@ -259,7 +254,6 @@ public class ClassPathTest extends TestCase {
                 .scanResources())
         .isEmpty();
   }
-
 
   public void testScanFromFile_notJarFile() throws IOException {
     ClassLoader classLoader = ClassPathTest.class.getClassLoader();
@@ -410,7 +404,6 @@ public class ClassPathTest extends TestCase {
 
   // Test that ResourceInfo.urls() returns identical content to ClassLoader.getResources()
 
-
   public void testGetClassPathUrls() throws Exception {
     String oldPathSeparator = PATH_SEPARATOR.value();
     String oldClassPath = JAVA_CLASS_PATH.value();
@@ -451,13 +444,11 @@ public class ClassPathTest extends TestCase {
 
   private static class Nested {}
 
-
   public void testNulls() throws IOException {
     new NullPointerTester().testAllPublicStaticMethods(ClassPath.class);
     new NullPointerTester()
         .testAllPublicInstanceMethods(ClassPath.from(getClass().getClassLoader()));
   }
-
 
   public void testLocationsFrom_idempotentScan() throws IOException {
     ImmutableSet<ClassPath.LocationInfo> locations =
@@ -488,12 +479,10 @@ public class ClassPathTest extends TestCase {
         .testEquals();
   }
 
-
   public void testScanAllResources() throws IOException {
     assertThat(scanResourceNames(ClassLoader.getSystemClassLoader()))
         .contains("com/google/common/reflect/ClassPathTest.class");
   }
-
 
   public void testExistsThrowsSecurityException() throws IOException, URISyntaxException {
     SecurityManager oldSecurityManager = System.getSecurityManager();
