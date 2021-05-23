@@ -52,7 +52,6 @@ import junit.framework.TestCase;
  *
  * @author Brian Stoler
  */
-
 public class AbstractFutureTest extends TestCase {
   public void testSuccess() throws ExecutionException, InterruptedException {
     final Object value = new Object();
@@ -424,7 +423,6 @@ public class AbstractFutureTest extends TestCase {
    * He did the bash, he did the future bash The future bash, it was a concurrency smash He did the
    * bash, it caught on in a flash He did the bash, he did the future bash
    */
-
   public void testFutureBash() {
     final CyclicBarrier barrier =
         new CyclicBarrier(
