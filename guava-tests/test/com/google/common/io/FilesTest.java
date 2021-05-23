@@ -46,7 +46,6 @@ import junit.framework.TestSuite;
  *
  * @author Chris Nokleberg
  */
-
 public class FilesTest extends IoTestCase {
 
   public static TestSuite suite() {
