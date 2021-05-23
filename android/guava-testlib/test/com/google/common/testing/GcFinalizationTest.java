@@ -32,7 +32,6 @@ import junit.framework.TestCase;
  * @author Martin Buchholz
  * @author mike nonemacher
  */
-
 public class GcFinalizationTest extends TestCase {
 
   // ----------------------------------------------------------------
