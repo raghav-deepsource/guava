@@ -43,7 +43,6 @@ import junit.framework.TestSuite;
  * classes unavailable. Then we construct a test suite so we can run the normal AbstractFutureTest
  * test methods in these degenerate classloaders.
  */
-
 public class AbstractFutureFallbackAtomicHelperTest extends TestCase {
 
   // stash these in static fields to avoid loading them over and over again (speeds up test
