@@ -52,7 +52,6 @@ import junit.framework.TestSuite;
  *
  * @author Colin Decker
  */
-
 public class MoreFilesTest extends TestCase {
 
   public static TestSuite suite() {
@@ -424,8 +423,7 @@ public class MoreFilesTest extends TestCase {
   static FileSystem newTestFileSystem(Feature... supportedFeatures) throws IOException {
     FileSystem fs =
         Jimfs.newFileSystem(
-            Configuration.unix()
-                .toBuilder()
+            Configuration.unix().toBuilder()
                 .setSupportedFeatures(ObjectArrays.concat(SYMBOLIC_LINKS, supportedFeatures))
                 .build());
     Files.createDirectories(fs.getPath("dir/b/i/j/l"));
