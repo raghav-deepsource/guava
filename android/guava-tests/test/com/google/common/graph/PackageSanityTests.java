@@ -27,7 +27,6 @@ import junit.framework.AssertionFailedError;
  *
  * @author Kurt Alfred Kluever
  */
-
 public class PackageSanityTests extends AbstractPackageSanityTests {
 
   private static final AbstractGraphBuilder<?> GRAPH_BUILDER_A =
