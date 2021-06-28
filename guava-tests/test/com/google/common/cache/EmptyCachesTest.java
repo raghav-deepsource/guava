@@ -38,7 +38,6 @@ import junit.framework.TestCase;
  *
  * @author mike nonemacher
  */
-
 public class EmptyCachesTest extends TestCase {
 
   public void testEmpty() {
@@ -46,7 +45,6 @@ public class EmptyCachesTest extends TestCase {
       checkEmpty(cache);
     }
   }
-
 
   public void testInvalidate_empty() {
     for (LoadingCache<Object, Object> cache : caches()) {
@@ -68,7 +66,6 @@ public class EmptyCachesTest extends TestCase {
       checkEmpty(cache);
     }
   }
-
 
   public void testEquals_null() {
     for (LoadingCache<Object, Object> cache : caches()) {
@@ -138,7 +135,6 @@ public class EmptyCachesTest extends TestCase {
       }
     }
   }
-
 
   public void testKeySet_clear() {
     for (LoadingCache<Object, Object> cache : caches()) {
@@ -214,7 +210,6 @@ public class EmptyCachesTest extends TestCase {
     }
   }
 
-
   public void testValues_clear() {
     for (LoadingCache<Object, Object> cache : caches()) {
       warmUp(cache, 0, 100);
@@ -288,7 +283,6 @@ public class EmptyCachesTest extends TestCase {
       }
     }
   }
-
 
   public void testEntrySet_clear() {
     for (LoadingCache<Object, Object> cache : caches()) {

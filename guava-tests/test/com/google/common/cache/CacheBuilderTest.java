@@ -475,7 +475,6 @@ public class CacheBuilderTest extends TestCase {
   }
 
   @GwtIncompatible // QueuingRemovalListener
-
   public void testRemovalNotification_clear() throws InterruptedException {
     // If a clear() happens while a computation is pending, we should not get a removal
     // notification.
@@ -546,7 +545,6 @@ public class CacheBuilderTest extends TestCase {
    * cache afterward).
    */
   @GwtIncompatible // QueuingRemovalListener
-
   public void testRemovalNotification_clear_basher() throws InterruptedException {
     // If a clear() happens close to the end of computation, one of two things should happen:
     // - computation ends first: the removal listener is called, and the cache does not contain the
@@ -630,7 +628,6 @@ public class CacheBuilderTest extends TestCase {
    * (removed because of size limits or expiration) trigger appropriate removal notifications.
    */
   @GwtIncompatible // QueuingRemovalListener
-
   public void testRemovalNotification_get_basher() throws InterruptedException {
     int nTasks = 1000;
     int nThreads = 100;
