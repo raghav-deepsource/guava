@@ -1646,7 +1646,6 @@ public abstract class ClosingFutureTest extends TestCase {
   }
 
   /** Tests for {@link ClosingFuture} that exercise {@link ClosingFuture#finishToFuture()}. */
-
   public static class FinishToFutureTest extends ClosingFutureTest {
 
     public void testFinishToFuture_throwsIfCalledTwice() throws Exception {
@@ -1718,7 +1717,6 @@ public abstract class ClosingFutureTest extends TestCase {
    * Tests for {@link ClosingFuture} that exercise {@link
    * ClosingFuture#finishToValueAndCloser(ValueAndCloserConsumer, Executor)}.
    */
-
   public static class FinishToValueAndCloserTest extends ClosingFutureTest {
 
     private final ExecutorService finishToValueAndCloserExecutor = newSingleThreadExecutor();
