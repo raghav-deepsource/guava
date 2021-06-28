@@ -124,7 +124,6 @@ public class CallablesTest extends TestCase {
   }
 
   @GwtIncompatible // threads
-
   public void testRenaming_noPermissions() throws Exception {
     System.setSecurityManager(
         new SecurityManager() {
