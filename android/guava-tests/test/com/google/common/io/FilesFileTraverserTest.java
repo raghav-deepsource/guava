@@ -33,7 +33,6 @@ import junit.framework.TestCase;
  *
  * @author Jens Nyman
  */
-
 public class FilesFileTraverserTest extends TestCase {
 
   private File rootDir;
