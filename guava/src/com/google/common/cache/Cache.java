@@ -40,7 +40,7 @@ import org.checkerframework.checker.nullness.qual.Nullable;
  */
 @DoNotMock("Use CacheBuilder.newBuilder().build()")
 @GwtCompatible
-public interface Cache <K, V> {
+public interface Cache<K, V> {
 
   /**
    * Returns the value associated with {@code key} in this cache, or {@code null} if there is no
@@ -154,7 +154,6 @@ public interface Cache <K, V> {
    * created using {@link CacheBuilder} only does so if the {@link CacheBuilder#recordStats} method
    * was called. If statistics are not being recorded, a {@code CacheStats} instance with zero for
    * all values is returned.
-   *
    */
   @CheckReturnValue
   CacheStats stats();
