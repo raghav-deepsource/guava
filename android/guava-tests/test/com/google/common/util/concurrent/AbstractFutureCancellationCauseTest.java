@@ -30,7 +30,6 @@ import javax.annotation.concurrent.GuardedBy;
 import junit.framework.TestCase;
 
 /** Tests for {@link AbstractFuture} with the cancellation cause system property set */
-
 public class AbstractFutureCancellationCauseTest extends TestCase {
 
   private ClassLoader oldClassLoader;
