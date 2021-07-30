@@ -6,6 +6,7 @@ enabled = true
 
   [analyzers.meta]
   runtime_version = "8"
+  legacy = true
 
 [[transformers]]
 name = "google-java-format"
