@@ -23,7 +23,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.LockSupport;
 import junit.framework.TestCase;
 
-
 public final class InterruptibleTaskTest extends TestCase {
 
   // Regression test for a deadlock where a task could be stuck busy waiting for the task to
