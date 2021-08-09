@@ -39,7 +39,6 @@ import junit.framework.TestSuite;
  *
  * @author Chris Nokleberg
  */
-
 public class ResourcesTest extends IoTestCase {
 
   public static TestSuite suite() {
