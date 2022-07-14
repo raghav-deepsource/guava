@@ -117,6 +117,24 @@
     </plugins>
     <pluginManagement>
       <plugins>
+               <plugin>
+                    <groupId>org.openclover</groupId>
+                    <artifactId>clover-maven-plugin</artifactId>
+                    <version>4.4.1</version>
+                    <configuration>
+
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <phase>verify</phase>
+                            <goals>
+                                <goal>instrument</goal>
+                                <goal>aggregate</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+               
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.8.1</version>
